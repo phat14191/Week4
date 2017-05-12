@@ -11,7 +11,7 @@ _Create a pizza object constructor with properties for toppings and size.
 _Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
 
 ## Setup/Installation Requirements
-* _Please download or clone this link https://github.com/phat14191/Week6 and enjoying to play with your number.
+* _Please download or clone this link https://github.com/phat14191/Week4 and enjoying to play with your number.
 
 
 ## Known Bugs
