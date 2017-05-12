@@ -3,16 +3,18 @@ $(document).ready(function(){
   $('form.pizza-order').submit(function(event){
     $("input[type=checkbox]:checked").each(function(){
         pizzaToppings.push($(this).val());
+    // debugger;
         // console.log(pizzaToppings);
     });
 
     var pizzaSize = $('input:radio[name=pizza]:checked').val();
     var newPizza = new Pizza(pizzaSize, pizzaToppings);
 
-    // console.log(newPizza);
+    newPizza.pizzaResult();
+    console.log(newPizza);
 
     $("#priceHide").show();
-    $("#priceOutput").text(newPizza.pizzaCost.append(2));
+    $("#priceOutput").text(newPizza.pizzaCost.toFixed(2));
 
    event.preventDefault();
   });
