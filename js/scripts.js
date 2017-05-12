@@ -9,7 +9,7 @@ $(document).ready(function(){
     var pizzaSize = $('input:radio[name=pizza]:checked').val();
     var newPizza = new Pizza(pizzaSize, pizzaToppings);
 
-    console.log(newPizza);
+    // console.log(newPizza);
 
     $("#priceHide").show();
     $("#priceOutput").text(newPizza.pizzaCost.append(2));
