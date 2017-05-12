@@ -1,0 +1,14 @@
+#sizeHide {
+  display: none;
+}
+#toppingsHide {
+  display: none;
+}
+#priceHide {
+  display: none;
+}
+
+body {
+  width: 100%;
+  background-size: cover;
+}

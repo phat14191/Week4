@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.2.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <title>Welcome to Phat's PIZZA</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Welcome to Phat's PIZZA</h1>
+      <h2>Each pie is made in the Italian tradition, hand-tossed and baked on bricks</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-1">
+          <!-- Sizes -->
+          <h2>Pick A Size:</h2>
+
+          <form class="pizza-order">
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="personalPizza" value="personal">
+                Personal 10" Pizza
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="smallPizza" value="small">
+                Small 12" Pizza
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="mediumPizza" value="medium">
+                Medium 14" Pizza
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="largePizza" value="large">
+                Large 16" Pizza
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-5">
+          <!-- Toppings -->
+          <h2>Top with Toppings:</h2>
+          <form class="pizza-order">
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Musroom">
+                Musroom
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Goat Cheese Primo">
+                Goat Cheese Primo
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Fresh Veggie">
+                Fresh Veggie
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Verde Primo">
+                Verde Primo
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Spicy Chicken">
+                Spicy Chicken
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Grand Salami Primo">
+                Grand Salami Primo
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="The Rocket">
+                The Rocket
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <!-- Submit -->
+          <form class="pizza-order">
+            <br>
+            <button id=""type="submit" class="btn btn-danger">Complete Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <!-- Output Pizza Price -->
+          <div id="priceHide">
+            <h2 id="priceConfirm">Your pizza will cost $<span id="priceOutput"></span>.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
